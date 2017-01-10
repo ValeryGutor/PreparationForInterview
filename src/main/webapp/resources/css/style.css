@@ -1,0 +1,46 @@
+body {
+  text-align:center;
+  padding:100px 0;
+  color:#fff;
+  background:#4fadad;
+  font-family:sans-serif;
+}
+div {
+    border-bottom:1px solid #fff;
+    margin:0 auto;
+    padding:4px 0;
+    width:40px;
+}
+.fa {
+  font-size:30px;
+  animation: scribble 1s infinite;
+}
+
+@keyframes scribble {
+  0% {transform:rotate(-10deg);
+      padding-left:5px;
+      padding-right:15px;
+  }
+  50% {transform:rotate(-60deg);
+      padding-left:20px;
+
+  }
+  100% {transform:rotate(-10deg);
+      padding-left:5px;
+      padding-right:15px;
+  }
+}
+
+
+/* ignore below */
+
+div:nth-of-type(2n) {
+  padding-top:100px;
+  border:0;
+  width:100%;
+  opacity:1;
+}
+
+div a {
+  color:#fff;
+}
